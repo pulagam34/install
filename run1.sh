@@ -38,3 +38,9 @@ sed -i 's/localPort = 8080/localPort = 8082/' /root/node-2/gaia-frp/frpc.toml
 # Show the node info
 /root/node-1/bin/gaianet info --base /root/node-1
 /root/node-1/bin/gaianet info --base /root/node-2
+
+import time
+while True:
+    !nvidia-smi
+    clear_output(wait=True)
+    time.sleep(60)
