@@ -5,8 +5,8 @@
 
 # Run the monitoring loop with nvidia-smi and clear output in Colab via Python
 while true; do
-    stty sane  # Reset terminal attributes
-    clear
+    echo -e "\033c"  # Reset terminal (alternative to clear)
     nvidia-smi
     sleep 5
 done
+
