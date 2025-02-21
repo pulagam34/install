@@ -41,6 +41,7 @@ sed -i 's/localPort = 8080/localPort = 8082/' /root/node-2/gaia-frp/frpc.toml
 
 # Continuously monitor the GPU status
 while true; do
+    clear  # Clears the screen
     nvidia-smi
     sleep 60
 done
