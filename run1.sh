@@ -12,10 +12,8 @@ import time
 while True:
     # Clear the output in Colab
     clear_output(wait=True)
-    
     # Run nvidia-smi to display GPU stats
     subprocess.run(['nvidia-smi'])
-    
     # Sleep for 60 seconds
     time.sleep(60)
   "
