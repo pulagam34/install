@@ -6,5 +6,5 @@
 while true; do
     !clear
     nvidia-smi
-    sleep 60
+    sleep 5
 done
